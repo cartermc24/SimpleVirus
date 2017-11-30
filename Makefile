@@ -1,4 +1,4 @@
 all:
-	gcc -o virus virus.c
+	gcc -o virus main.c
 clean:
 	rm -f virus *~ 
